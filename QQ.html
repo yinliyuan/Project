@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .skin {
+            padding: 60px 0 0 0;
+            width: 100%;
+            background: #fafafa;
+        }
+
+        .skin .skin-inner {
+            max-width: 1440px;
+            margin: 0 auto;
+            overflow: hidden;
+            /*text-align: center;*/
+        }
+
+        .skin .skin-inner .skin-header {
+            display: block;
+            font-family: "Microsoft YaHei";
+            color: #333;
+            text-align: center;
+
+        }
+
+        .skin .skin-inner .skin-header .title {
+            display: block;
+            /*height: 77.6px;*/
+            font-size: 52px;
+            line-height: 1.5;
+            white-space: nowrap;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+        }
+
+        .skin .skin-inner .skin-header .info {
+            display: block;
+            font-size: 14px;
+            margin: 2px 0 0 0;
+            line-height: 30px;
+            /*height: 29.6px;*/
+
+        }
+
+        .skin-w {
+            display: block;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .skin-w .skin-w-inner {
+            /*display: block;*/
+            position: relative;
+            margin: 0 auto;
+            text-align: center;
+            width: 1088px;
+            height: 561px;
+            border: 0;
+            
+        }
+
+        .skin-w video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1088px;
+            height: 563px;
+            border: none;
+            
+
+            /*background: transparent;*/
+        }
+
+
+
+
+
+
+        .speed {
+            margin: 32px 0 0 0;
+            height: 765px;
+            width: 100%;
+            border:0;
+
+            background: #0d0d0d;
+            opacity: 1;
+
+        }
+
+        .speed .speed-wrapper {
+            max-width: 1440px;
+            margin: 0 auto;
+            height: 100%;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .speed .speed-wrapper .video-w {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .speed  .speed-wrapper  .video-w video {
+            display: inline;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /*z-index: -100;*/
+        }
+
+        .speed .video-bg{
+
+            vertical-align: middle;
+            width: 100%;
+            height: 100%;
+            /*position: relative;*/
+            /*display: block;*/
+            margin: auto 0 ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: transparent;
+            /*float: left;*/
+
+
+        }
+
+
+        .speed .video-bg .video-info {
+            /*position: absolute;*/
+            /*top: 0;*/
+            /*left: 0;*/
+            /*right: 0;*/
+            /*bottom:0;*/
+            margin: 0 auto;
+            display: block;
+            vertical-align: middle;
+            text-align: center;
+            color: #fff;
+            width: 765px;
+            line-height: 21px;
+            z-index:999;
+
+
+
+        }
+
+        .speed .video-bg .video-info .info-title {
+            display: block;
+            vertical-align: middle;
+            text-align: center;
+            color: #fff;
+            z-index: 9999;
+            margin: 0 auto;
+            width: 516px;
+
+        }
+
+        .speed .video-bg .video-info .info-intro {
+            font-size: 32px;
+            display: block;
+            text-align: center;
+            color: white;
+            height: 48px;
+            line-height: 1.5;
+            letter-spacing: 7px;
+            margin: 56px 0 0 0;
+
+
+        }
+
+        .speed .video-bg .video-info .info-feature {
+            width: 570px;
+            margin: 43px auto 0;
+            display: block;
+            height: 66px;
+            overflow: hidden;
+            zoom: 1;
+
+        }
+
+        .speed .video-bg .video-info .info-feature .feature-item {
+            margin: 0 auto;
+            display: block;
+            float: left;
+            width: 190px;
+            height: 66px;
+            text-align: center;
+        }
+
+        .speed .video-bg .video-info .info-feature .feature-item img {
+            display: block;
+            margin: 0 auto;
+            width: 38px;
+            height: 38px;
+        }
+
+        .speed .video-bg .video-info .info-feature .feature-item p {
+            display: block;
+            font-size: 13px;
+            letter-spacing: 2px;
+            margin: 4px 0 0 0;
+            line-height:1.75em;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<section class="skin" id="skin">
+    <div class="skin-inner">
+        <div class="skin-header">
+            <h1 class="title">全面屏皮肤，定制你的浏览器</h1>
+            <p class="info">新一代浏览器设计，上百款精美壁纸，搭配毛玻璃磨砂界面，给你耳目一新的惊喜。</p>
+        </div>
+        <div class="skin-w">
+            <div class="skin-w-inner">
+                <video src="img/1.mp4" class="skin-video" autoplay loop preload></video>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="speed" id="speed">
+    <div class="speed-wrapper">
+        <div class="video-w">
+            <video src="img/2.mp4" class="speed-video video1" autoplay loop preload></video>
+            <div class="video-bg">
+                <div class="video-info">
+                    <img src="img/page-four-chrom.png" srcset="img/page-four-chrom@2x.png" alt="" class="info-title">
+                    <div class="info-intro">至强性能，快到超出你的想象</div>
+                    <div class="info-feature clearfix">
+                        <div class="feature-item">
+                            <img src="img/four-icon-chrom.png" alt="">
+                            <p class="feature-text">内核性能强劲</p>
+
+                        </div>
+                        <div class="feature-item">
+                            <img src="img/four-icon-quick.png" alt="">
+                            <p class="feature-text">网页极速打开</p>
+
+                        </div>
+                        <div class="feature-item">
+                            <img src="img/four-icon-time.png" alt="">
+                            <p class="feature-text">瞬间启动</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+
+<script>
+
+</script>
+</body>
+</html>
