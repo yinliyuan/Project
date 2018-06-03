@@ -1,0 +1,122 @@
+.tabList {
+  position: relative;
+  overflow: hidden;
+  padding: 40px 0;
+}
+.tabList .inner {
+  width: 1024px;
+  margin: 0 auto;
+}
+.tabList .inner .tabLeft {
+  float: left;
+  margin: 63px 0 0 100px ;
+  width: 333px;
+}
+.tabList .inner .tabLeft h2 {
+  font-size: 41px;
+}
+.tabList .inner .tabLeft .intro {
+  font-size: 12px;
+  line-height: 38px;
+  margin: 38px 0;
+}
+.tabList .inner .tabLeft .tabBox li {
+  float: left;
+  width: 111px;
+  text-align: center;
+  cursor: pointer;
+}
+.tabList .inner .tabLeft .tabBox li .img {
+  display: inline-block;
+  width: 41px;
+  height: 40px;
+  background: url("../img/logos-small.png") no-repeat;
+}
+.tabList .inner .tabLeft .tabBox li .img.img-1 {
+  background-position: -42px 0;
+}
+.tabList .inner .tabLeft .tabBox li .img.img-2 {
+  background-position: -126px 0;
+}
+.tabList .inner .tabLeft .tabBox li .img.img-3 {
+  background-position: -210px 0;
+}
+.tabList .inner .tabLeft .tabBox li .title {
+  margin: 16px auto 10px;
+}
+.tabList .inner .tabLeft .tabBox li .progress {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: #CCCCCC;
+}
+.tabList .inner .tabLeft .tabBox li .progress .current {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #6c6c6c;
+}
+.tabList .inner .tabLeft .tabBox li.active .img.img-1 {
+  background-position: 0 0;
+}
+.tabList .inner .tabLeft .tabBox li.active .img.img-2 {
+  background-position: -84px 0;
+}
+.tabList .inner .tabLeft .tabBox li.active .img.img-3 {
+  background-position: -168px 0;
+}
+.tabList .inner .tabLeft .tabBox li.active .progress .current {
+  width: 100%;
+  transition: width 2s;
+}
+.tabList .inner .tabLeft .tabBox li.active .progress .current.handle {
+  transition: none;
+}
+.tabList .inner .imgBox {
+  position: relative;
+  float: right;
+  width: 654px;
+  height: 413px;
+  margin-right: -80px;
+  overflow: hidden;
+}
+.tabList .inner .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  float: left;
+  width: 100%;
+  height: auto;
+  transition: 1s;
+}
+.tabList .inner .imgBox img.active {
+  opacity: 1;
+}
+#collection .tabBox li .img.img-1 {
+  background-position: -42px -40px;
+}
+#collection .tabBox li .img.img-2 {
+  background-position: -126px -40px;
+}
+#collection .tabBox li .img.img-3 {
+  background-position: -210px -40px;
+}
+#collection .tabBox li.active .img.img-1 {
+  background-position: 0 -40px;
+}
+#collection .tabBox li.active .img.img-2 {
+  background-position: -84px -40px;
+}
+#collection .tabBox li.active .img.img-3 {
+  background-position: -168px -40px;
+}
+#collection .tabBox li.active .progress .current {
+  width: 100%;
+  transition: width 2s;
+}
+#collection .tabBox li.active .progress .current.handle {
+  transition: none;
+}
