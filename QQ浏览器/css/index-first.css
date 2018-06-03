@@ -153,6 +153,7 @@ header .header-inner ul li a {
   margin-top: 80px;
   width: 100%;
   text-align: center;
+  overflow: hidden;
 }
 #life .life-bg {
   max-width: 842px;
