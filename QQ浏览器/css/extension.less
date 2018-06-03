@@ -1,0 +1,101 @@
+@import "reset";
+#extension{
+  width: 100%;
+  margin-top: 100px;
+  .title{
+    margin: 0 auto;
+    width: 600px;
+    h2{
+      font-weight: normal;
+      font-size: 43px;
+      height: 64px;
+      line-height: 64px;
+      text-align: center;
+    }
+    p{
+      font-size: 12px;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+  .unit {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 670px;
+    overflow: hidden;
+    .wrapper{
+      position: absolute;
+      top: 0;
+      left: -155px;
+      margin-top: 70px;
+      width: 6400px;
+      height: 600px;
+      li{
+        float: left;
+        width: 650px;
+        margin-right: 150px;
+        &:nth-last-child(1){
+          margin-right: 0;
+        }
+        img{
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+        .introduce{
+          margin-top: 50px;
+          width: 100%;
+          height: 100px;
+          .left{
+            float: left;
+            width: 80px;
+            height: 100px;
+            margin-right: 60px;
+            img{
+              display: block;
+              width: 80px;
+              height: 80px;
+            }
+            span{
+              display: block;
+              width: 80px;
+              height: 24px;
+              left: 20px;
+              text-align: center;
+              font-size: 16px;
+            }
+          }
+          p{
+            float: left;
+            padding: 10px 0 0 0;
+            width:500px;
+            font-size: 16px;
+            line-height: 37px;
+            color: #666666;
+          }
+        }
+      }
+    }
+  }
+  .focus{
+    margin:40px auto;
+    width: 400px;
+    li{
+      position: relative;
+      float: left;
+      width: 70px;
+      height: 1px;
+      margin-right: 10px;
+      background: #a7b6be;
+      cursor: pointer;
+      &:nth-last-child(1){
+        margin-right: 0;
+      }
+      &.active{
+        background: #000;
+      }
+    }
+  }
+}
