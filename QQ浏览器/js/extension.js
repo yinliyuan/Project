@@ -21,7 +21,7 @@ let extensionRender=(function(){
      };
     let changeFocus=function () {
         let _step=step;
-        if(_step>=wrapperList.length-2){
+        if(_step>=wrapperList.length-3){
             _step=0;
         }
         [].forEach.call(focusList,(item,index)=>{
