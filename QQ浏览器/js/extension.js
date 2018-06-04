@@ -11,19 +11,23 @@ let extensionRender=(function(){
      let autoMove=function () {
          step++;
          if (step >= wrapperList.length-2) {
-             utils.css(wrapper, 'left', -155);
+             utils.css(wrapper, 'left',-150);
              step=1;
          }
          utils.animate(wrapper, {
-             left: -step * 800-155
+             left: -step * 600-150
          }, 1000);
          changeFocus();
      };
     let changeFocus=function () {
         let _step=step;
-        _step===wrapperList.length-2?_step=0:null;
+        if(_step>=wrapperList.length-2){
+            _step=0;
+        }
         [].forEach.call(focusList,(item,index)=>{
+
             item.className = index === _step ? 'active' :'';
+
         })
     };
     let handleFocus = function () {
@@ -32,7 +36,7 @@ let extensionRender=(function(){
                 clearInterval(autoTimer);
                 step = index;
                 utils.animate(wrapper, {
-                    left: -step * 800-155
+                    left: -step * 600-150
                 }, 200);
                 changeFocus();
             };
@@ -40,12 +44,13 @@ let extensionRender=(function(){
                 autoTimer = setInterval(autoMove, interval);
                 step = index;
                 utils.animate(wrapper, {
-                    left: -step * 800-155
+                    left: -step * 600-150
                 }, 200);
                 changeFocus();
             }
         })
     };
+
     return {
         init:function(){
             autoTimer=setInterval(autoMove,interval);
